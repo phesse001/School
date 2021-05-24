@@ -1,0 +1,8 @@
+my.input
+my.output
+shell
+test.txt
+ush1.c
+ush2.c
+ush2-redirect.c
+ush3.c
