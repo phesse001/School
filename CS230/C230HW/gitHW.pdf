@@ -1,0 +1,1090 @@
+Question 1:
+
+[phesse001@vplincsci084 101 ~]$ git clone https://github.com/pohmann/CS230-TakeHome1
+Cloning into 'CS230-TakeHome1'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (40/40), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 40 (delta 9), reused 37 (delta 9), pack-reused 0
+Unpacking objects: 100% (40/40), done.
+
+Question 2:
+
+[phesse001@vplincsci084 106 ~/CS230-TakeHome1]$ git log
+commit 4a675c316e4b67405793b1b9a3c60b9e4d2d23d8
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 22:02:30 2020 -0500
+
+    Add missing test class docs
+    
+    Oops, I must have missed this earlier.
+
+commit 7f8f5738f1d54c448024cddabf4eed0b2672b994
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 22:01:01 2020 -0500
+
+    More spacing clean-up
+    
+    As before: I just didn't like it.
+
+commit 9c190902e18b1f4e8e75bb8ade1a5783d76d0f7e
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 21:59:04 2020 -0500
+
+    Clean up test class spacing
+    
+    I just didn't like how this looked.
+
+commit 8d2679640ba0f0f2add9b2850ae3acf5cb5fcebc
+Author: Alice <alice@mycorp.org>
+Date:   Wed Mar 25 21:45:11 2020 -0500
+
+    Fix summation bug
+    
+    Oops, must have been a typo here.
+
+
+commit 35662912dcd2cfe98d9eca9e299e0933086df85a
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 21:43:34 2020 -0500
+
+    Add documentation
+    
+    I had to guess what most of this does, but I documented it
+    anyways.
+
+commit 9bd3bce3bd71c4119daa0039e0c71439af218238
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 21:39:30 2020 -0500
+
+    Add our started Eclipse project
+    
+    We have some good work going here!
+    Let's keep it up!
+
+commit 81946909e3ef0392cca834f8675a1b8b90b64bc1
+Author: Peter Ohmann <ohmann@cs.wisc.edu>
+Date:   Wed Mar 25 21:06:34 2020 -0500
+
+    Initial commit
+(END)
+
+Question 3:
+
+before:
+[phesse001@vplincsci084 107 ~/CS230-TakeHome1]$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	src/aggregator/Aggregator.class
+#	src/aggregator/AggregatorTest.class
+nothing added to commit but untracked files present (use "git add" to track)
+
+Then I created the .gitignore file in my root directory and added the paths to the files that I don't want in the repository.
+
+after this I called git add '.gitignore' and git commit -m 'added git ignore file'
+
+(these two calls were done in a different terminal which I had to exit out of because I got stuck in vim, that is why I don't have the full output of the commands)
+
+after:
+[phesse001@vplincsci084 109 ~/CS230-TakeHome1]$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+[phesse001@vplincsci084 110 ~/CS230-TakeHome1]$ 
+
+Question 4:
+
+This is where the conflict arises:
+
+ public double getMean() {
+<<<<<<< HEAD
+  double sum = 0;
+  for(int i : storage)
+   sum += i;
+=======
+  double sum = getSum();
+>>>>>>> origin/alice-working
+  return sum / getSize();
+ }
+
+so in the current branch, there are the three lines you see between <<<<<<<<< HEAD and ========= and in the merging branch there is a single line which has a method to get the sum instead of setting it equal to 0.
+
+Question 5: 
+
+[phesse001@vplincsci084 104 ~/CS230-TakeHome1]$ git add src/aggregator/Aggregator.java~
+[phesse001@vplincsci084 105 ~/CS230-TakeHome1]$ git commit -m 'resolved conflicts between alices merge and my working copy'
+[master d3cd5bc] resolved conflicts between alices merge and my working copy
+ Committer: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 73 insertions(+)
+ create mode 100644 src/aggregator/Aggregator.java~
+[phesse001@vplincsci084 106 ~/CS230-TakeHome1]$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 4 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+Question 6:
+
+[phesse001@vplincsci084 132 ~/CS230-TakeHome1]$ git revert 35662912dcd2c
+# On branch master
+# Your branch is ahead of 'origin/master' by 9 commits.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+
+the reason there are 9 commits is because I was trying to revert when I was in the aggregator directory instead of the root directory, which was giving me some issues.
+
+I then called git log to see if it worked and I got this:
+
+[phesse001@vplincsci084 134 ~/CS230-TakeHome1]$ git log
+commit 8758907d42a72d7369c51ea68390d3b2dce9bc8c
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 18:06:57 2020 -0500
+
+    Revert "Add documentation"
+    
+    This reverts commit 35662912dcd2cfe98d9eca9e299e0933086df85a.
+    
+    Conflicts:
+        src/aggregator/Aggregator.java
+
+Question 7:
+
+here is what got redirected to a file I called outfile from calling git log -p --full-diff >> outputfile
+
+commit 8758907d42a72d7369c51ea68390d3b2dce9bc8c
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 18:06:57 2020 -0500
+
+    Revert "Add documentation"
+    
+    This reverts commit 35662912dcd2cfe98d9eca9e299e0933086df85a.
+    
+    Conflicts:
+    	src/aggregator/Aggregator.java
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index e8eaad9..cd0e6f9 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -1,6 +1,7 @@
+ package aggregator;
+ 
+ public class Aggregator {
++<<<<<<< HEAD
+  private int[] storage;
+  private int current;
+  
+@@ -36,4 +37,41 @@ public class Aggregator {
+    sum += i;
+   return sum / getSize();
+  }
++=======
++	private int[] storage;
++	private int current;
++	
++	public Aggregator(int size) {
++		storage = new int[size];
++		current = 0;
++	}
++	
++	public void add(int value) {
++		if (current == storage.length) {
++			throw new ArrayIndexOutOfBoundsException("Too many values!");
++		}
++		else {
++			storage[current] = value;
++			current++;
++		}
++	}
++	
++	public int getSize() {
++		return current;
++	}
++	
++	public int getSum() {
++		int sum = 1;
++		for (int i : storage)
++			sum += i;
++		return sum;
++	}
++	
++	public double getMean() {
++		double sum = 0.0;
++		for (int i : storage)
++			sum += i;
++		return sum / getSize();
++	}
++>>>>>>> parent of 3566291... Add documentation
+ }
+
+commit 3c5678e9f16556468782b147fd5c625a751b7ac4
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 18:02:36 2020 -0500
+
+    same aggregator file with ~ at the end???
+
+diff --git a/src/aggregator/Aggregator.java~ b/src/aggregator/Aggregator.java~
+index afb3b70..5ba1bfa 100644
+--- a/src/aggregator/Aggregator.java~
++++ b/src/aggregator/Aggregator.java~
+@@ -2,26 +2,18 @@ package aggregator;
+ 
+ public class Aggregator {
+ <<<<<<< HEAD
++
++
+  private int[] storage;
+  private int current;
+  
+- /**
+-  * Build a thing.
+-  * 
+-  * @param size the initial size of the thing
+-  */
+  public Aggregator(int size) {
+   storage = new int[size];
+   current = 0;
+  }
+  
+- /**
+-  * Probably add something.  I'm not sure.
+-  * 
+-  * @param value the value to add, I guess
+-  */
+  public void add(int value) {
+-  if(current==storage.length) {
++  if (current == storage.length) {
+    throw new ArrayIndexOutOfBoundsException("Too many values!");
+   }
+   else {
+@@ -30,36 +22,24 @@ public class Aggregator {
+   }
+  }
+  
+- /**
+-  * Get the size.
+-  * 
+-  * @return the size of this aggregator thing
+-  */
+  public int getSize() {
+   return current;
+  }
+  
+- /**
+-  * Get the sum of the stuff in here.
+-  * 
+-  * @return all the things added up
+-  */
+  public int getSum() {
+-  int sum = 0;
+-  for(int i : storage)
++  int sum = 1;
++  for (int i : storage)
+    sum += i;
+   return sum;
+  }
+  
+- /**
+-  * Get the average of all the stuff in here.
+-  * 
+-  * @return the things averaged together
+-  */
+  public double getMean() {
+-  double sum = getSum();
++  double sum = 0.0;
++  for (int i : storage)
++   sum += i;
+   return sum / getSize();
+  }
++
+ =======
+ 	private int[] storage;
+ 	private int current;
+
+commit 2bd2e3b4a415adec72e87aedf85777913ddab5b6
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 17:47:05 2020 -0500
+
+    changed bobs commit to remove documentation
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index c13da04..e8eaad9 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -1,8 +1,6 @@
+ package aggregator;
+ 
+ public class Aggregator {
+-
+-
+  private int[] storage;
+  private int current;
+  
+@@ -38,5 +36,4 @@ public class Aggregator {
+    sum += i;
+   return sum / getSize();
+  }
+-
+ }
+
+commit 2a8d5655b772465769323d1e77b94dc33f417b3c
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 17:44:12 2020 -0500
+
+    made changes to this file
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index 14260af..c13da04 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -2,7 +2,7 @@ package aggregator;
+ 
+ public class Aggregator {
+ 
+-  
++
+  private int[] storage;
+  private int current;
+  
+@@ -38,4 +38,5 @@ public class Aggregator {
+    sum += i;
+   return sum / getSize();
+  }
++
+ }
+
+commit 175e8eda6c0191c8efd0efedbd213c9b331e29ae
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 17:23:00 2020 -0500
+
+    changed files to fix conflict from reverting bobs documentation
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index fac71d2..14260af 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -1,31 +1,18 @@
+ package aggregator;
+ 
+-/**
+- * I think this class adds things up sometimes.
+- * 
+- * @author Alice and Bob
+- */
+ public class Aggregator {
++
++  
+  private int[] storage;
+  private int current;
+  
+- /**
+-  * Build a thing.
+-  * 
+-  * @param size the initial size of the thing
+-  */
+  public Aggregator(int size) {
+   storage = new int[size];
+   current = 0;
+  }
+  
+- /**
+-  * Probably add something.  I'm not sure.
+-  * 
+-  * @param value the value to add, I guess
+-  */
+  public void add(int value) {
+-  if(current==storage.length) {
++  if (current == storage.length) {
+    throw new ArrayIndexOutOfBoundsException("Too many values!");
+   }
+   else {
+@@ -34,34 +21,21 @@ public class Aggregator {
+   }
+  }
+  
+- /**
+-  * Get the size.
+-  * 
+-  * @return the size of this aggregator thing
+-  */
+  public int getSize() {
+   return current;
+  }
+  
+- /**
+-  * Get the sum of the stuff in here.
+-  * 
+-  * @return all the things added up
+-  */
+  public int getSum() {
+-  int sum = 0;
+-  for(int i : storage)
++  int sum = 1;
++  for (int i : storage)
+    sum += i;
+   return sum;
+  }
+  
+- /**
+-  * Get the average of all the stuff in here.
+-  * 
+-  * @return the things averaged together
+-  */
+  public double getMean() {
+-  double sum = getSum();
++  double sum = 0.0;
++  for (int i : storage)
++   sum += i;
+   return sum / getSize();
+  }
+ }
+diff --git a/src/aggregator/Aggregator.java~ b/src/aggregator/Aggregator.java~
+index adb6e54..afb3b70 100644
+--- a/src/aggregator/Aggregator.java~
++++ b/src/aggregator/Aggregator.java~
+@@ -1,31 +1,76 @@
+ package aggregator;
+ 
+-/**
+- * I think this class adds things up sometimes.
+- * 
+- * @author Alice and Bob
+- */
+ public class Aggregator {
++<<<<<<< HEAD
++ private int[] storage;
++ private int current;
++ 
++ /**
++  * Build a thing.
++  * 
++  * @param size the initial size of the thing
++  */
++ public Aggregator(int size) {
++  storage = new int[size];
++  current = 0;
++ }
++ 
++ /**
++  * Probably add something.  I'm not sure.
++  * 
++  * @param value the value to add, I guess
++  */
++ public void add(int value) {
++  if(current==storage.length) {
++   throw new ArrayIndexOutOfBoundsException("Too many values!");
++  }
++  else {
++   storage[current] = value;
++   current++;
++  }
++ }
++ 
++ /**
++  * Get the size.
++  * 
++  * @return the size of this aggregator thing
++  */
++ public int getSize() {
++  return current;
++ }
++ 
++ /**
++  * Get the sum of the stuff in here.
++  * 
++  * @return all the things added up
++  */
++ public int getSum() {
++  int sum = 0;
++  for(int i : storage)
++   sum += i;
++  return sum;
++ }
++ 
++ /**
++  * Get the average of all the stuff in here.
++  * 
++  * @return the things averaged together
++  */
++ public double getMean() {
++  double sum = getSum();
++  return sum / getSize();
++ }
++=======
+ 	private int[] storage;
+ 	private int current;
+ 	
+-	/**
+-	 * Build a thing.
+-	 * 
+-	 * @param size the initial size of the thing
+-	 */
+ 	public Aggregator(int size) {
+ 		storage = new int[size];
+ 		current = 0;
+ 	}
+ 	
+-	/**
+-	 * Probably add something.  I'm not sure.
+-	 * 
+-	 * @param value the value to add, I guess
+-	 */
+ 	public void add(int value) {
+-		if(current==storage.length) {
++		if (current == storage.length) {
+ 			throw new ArrayIndexOutOfBoundsException("Too many values!");
+ 		}
+ 		else {
+@@ -34,40 +79,22 @@ public class Aggregator {
+ 		}
+ 	}
+ 	
+-	/**
+-	 * Get the size.
+-	 * 
+-	 * @return the size of this aggregator thing
+-	 */
+ 	public int getSize() {
+ 		return current;
+ 	}
+ 	
+-	/**
+-	 * Get the sum of the stuff in here.
+-	 * 
+-	 * @return all the things added up
+-	 */
+ 	public int getSum() {
+-		int sum = 0;
+-		for(int i : storage)
++		int sum = 1;
++		for (int i : storage)
+ 			sum += i;
+ 		return sum;
+ 	}
+ 	
+-	/**
+-	 * Get the average of all the stuff in here.
+-	 * 
+-	 * @return the things averaged together
+-	 */
+ 	public double getMean() {
+-<<<<<<< HEAD
+-		double sum = 0;
+-		for(int i : storage)
++		double sum = 0.0;
++		for (int i : storage)
+ 			sum += i;
+-=======
+-		double sum = getSum();
+->>>>>>> origin/alice-working
+ 		return sum / getSize();
+ 	}
++>>>>>>> parent of 3566291... Add documentation
+ }
+diff --git a/src/aggregator/AggregatorTest.java b/src/aggregator/AggregatorTest.java
+index aeeb25f..29ec470 100644
+--- a/src/aggregator/AggregatorTest.java
++++ b/src/aggregator/AggregatorTest.java
+@@ -7,12 +7,6 @@ package aggregator;
+  */
+ public class AggregatorTest {
+ 	
+-	/**
+-	 * Run the tests!
+-	 * What is JUnit?  I don't understand.
+-	 * 
+-	 * @param args arguments, but not needed
+-	 */
+ 	public static void main(String[] args) {
+ 		Aggregator testObj = new Aggregator(2);
+ 		
+
+commit d3cd5bc8853cf4fbbfc919e563df99607dea9fc0
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 13:53:13 2020 -0500
+
+    resolved conflicts between alices merge and my working copy
+
+diff --git a/src/aggregator/Aggregator.java~ b/src/aggregator/Aggregator.java~
+new file mode 100644
+index 0000000..adb6e54
+--- /dev/null
++++ b/src/aggregator/Aggregator.java~
+@@ -0,0 +1,73 @@
++package aggregator;
++
++/**
++ * I think this class adds things up sometimes.
++ * 
++ * @author Alice and Bob
++ */
++public class Aggregator {
++	private int[] storage;
++	private int current;
++	
++	/**
++	 * Build a thing.
++	 * 
++	 * @param size the initial size of the thing
++	 */
++	public Aggregator(int size) {
++		storage = new int[size];
++		current = 0;
++	}
++	
++	/**
++	 * Probably add something.  I'm not sure.
++	 * 
++	 * @param value the value to add, I guess
++	 */
++	public void add(int value) {
++		if(current==storage.length) {
++			throw new ArrayIndexOutOfBoundsException("Too many values!");
++		}
++		else {
++			storage[current] = value;
++			current++;
++		}
++	}
++	
++	/**
++	 * Get the size.
++	 * 
++	 * @return the size of this aggregator thing
++	 */
++	public int getSize() {
++		return current;
++	}
++	
++	/**
++	 * Get the sum of the stuff in here.
++	 * 
++	 * @return all the things added up
++	 */
++	public int getSum() {
++		int sum = 0;
++		for(int i : storage)
++			sum += i;
++		return sum;
++	}
++	
++	/**
++	 * Get the average of all the stuff in here.
++	 * 
++	 * @return the things averaged together
++	 */
++	public double getMean() {
++<<<<<<< HEAD
++		double sum = 0;
++		for(int i : storage)
++			sum += i;
++=======
++		double sum = getSum();
++>>>>>>> origin/alice-working
++		return sum / getSize();
++	}
++}
+
+commit ac003660f0ec9f0961726e4b0f78b62e4110d5e9
+Merge: 3fe7e6e 4f2abe5
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 13:48:20 2020 -0500
+
+    resolved conflictfrom fetching alices changes
+
+commit 3fe7e6e4cbdc8497991aeaaa5ac000d0984eccba
+Author: PHESSE001 <phesse001@vplincsci084.ad.csbsju.edu>
+Date:   Tue Mar 31 13:32:19 2020 -0500
+
+    added git ignore file
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..873bf5d
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,2 @@
++src/aggregator/Aggregator.class
++src/aggregator/AggregatorTest.class
+
+commit 4a675c316e4b67405793b1b9a3c60b9e4d2d23d8
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 22:02:30 2020 -0500
+
+    Add missing test class docs
+    
+    Oops, I must have missed this earlier.
+
+diff --git a/src/aggregator/AggregatorTest.java b/src/aggregator/AggregatorTest.java
+index 91525f4..aeeb25f 100644
+--- a/src/aggregator/AggregatorTest.java
++++ b/src/aggregator/AggregatorTest.java
+@@ -1,5 +1,10 @@
+ package aggregator;
+ 
++/**
++ * The tester class for the Aggregator.
++ * 
++ * @author Alice and Bob
++ */
+ public class AggregatorTest {
+ 	
+ 	/**
+
+commit 7f8f5738f1d54c448024cddabf4eed0b2672b994
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 22:01:01 2020 -0500
+
+    More spacing clean-up
+    
+    As before: I just didn't like it.
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index 7aa923f..0756321 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -25,7 +25,7 @@ public class Aggregator {
+ 	 * @param value the value to add, I guess
+ 	 */
+ 	public void add(int value) {
+-		if (current == storage.length) {
++		if(current==storage.length) {
+ 			throw new ArrayIndexOutOfBoundsException("Too many values!");
+ 		}
+ 		else {
+@@ -50,7 +50,7 @@ public class Aggregator {
+ 	 */
+ 	public int getSum() {
+ 		int sum = 0;
+-		for (int i : storage)
++		for(int i : storage)
+ 			sum += i;
+ 		return sum;
+ 	}
+@@ -61,8 +61,8 @@ public class Aggregator {
+ 	 * @return the things averaged together
+ 	 */
+ 	public double getMean() {
+-		double sum = 0.0;
+-		for (int i : storage)
++		double sum = 0;
++		for(int i : storage)
+ 			sum += i;
+ 		return sum / getSize();
+ 	}
+
+commit 9c190902e18b1f4e8e75bb8ade1a5783d76d0f7e
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 21:59:04 2020 -0500
+
+    Clean up test class spacing
+    
+    I just didn't like how this looked.
+
+diff --git a/src/aggregator/AggregatorTest.java b/src/aggregator/AggregatorTest.java
+index 16cda64..91525f4 100644
+--- a/src/aggregator/AggregatorTest.java
++++ b/src/aggregator/AggregatorTest.java
+@@ -14,7 +14,7 @@ public class AggregatorTest {
+ 		boolean passed = true;
+ 		
+ 		// test initial size
+-		if(testObj.getSize() != 0) {
++		if (testObj.getSize() != 0) {
+ 			System.err.println("ERROR: failed initial size!");
+ 			passed = false;
+ 		}
+@@ -24,18 +24,18 @@ public class AggregatorTest {
+ 		int second = 12;
+ 		testObj.add(first);
+ 		testObj.add(second);
+-		if(first+second != testObj.getSum()) {
++		if (first + second != testObj.getSum()) {
+ 			System.err.println("ERROR: failed sum test!");
+ 			passed = false;
+ 		}
+ 		
+ 		// test mean
+-		if((first+second)/2.0 != testObj.getMean()) {
++		if ((first + second) / 2.0 != testObj.getMean()) {
+ 			System.err.println("ERROR: failed mean test!");
+ 			passed = false;
+ 		}
+ 		
+-		if(passed) {
++		if (passed) {
+ 			System.out.println("Passed all tests!");
+ 		}
+ 	}
+
+commit 4f2abe5c5ef43e377c7fc4906c51991a6c4dfe39
+Author: Alice <alice@mycorp.org>
+Date:   Wed Mar 25 21:53:44 2020 -0500
+
+    Modular method re-use
+    
+    Use the getSum() method as part of getMean().
+    This was previously duplicated code.
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index 7aa923f..df03709 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -61,9 +61,7 @@ public class Aggregator {
+ 	 * @return the things averaged together
+ 	 */
+ 	public double getMean() {
+-		double sum = 0.0;
+-		for (int i : storage)
+-			sum += i;
++		double sum = getSum();
+ 		return sum / getSize();
+ 	}
+ }
+
+commit 8d2679640ba0f0f2add9b2850ae3acf5cb5fcebc
+Author: Alice <alice@mycorp.org>
+Date:   Wed Mar 25 21:45:11 2020 -0500
+
+    Fix summation bug
+    
+    Oops, must have been a typo here.
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index fcce121..7aa923f 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -49,7 +49,7 @@ public class Aggregator {
+ 	 * @return all the things added up
+ 	 */
+ 	public int getSum() {
+-		int sum = 1;
++		int sum = 0;
+ 		for (int i : storage)
+ 			sum += i;
+ 		return sum;
+
+commit 35662912dcd2cfe98d9eca9e299e0933086df85a
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 21:43:34 2020 -0500
+
+    Add documentation
+    
+    I had to guess what most of this does, but I documented it
+    anyways.
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+index 6977aec..fcce121 100644
+--- a/src/aggregator/Aggregator.java
++++ b/src/aggregator/Aggregator.java
+@@ -1,14 +1,29 @@
+ package aggregator;
+ 
++/**
++ * I think this class adds things up sometimes.
++ * 
++ * @author Alice and Bob
++ */
+ public class Aggregator {
+ 	private int[] storage;
+ 	private int current;
+ 	
++	/**
++	 * Build a thing.
++	 * 
++	 * @param size the initial size of the thing
++	 */
+ 	public Aggregator(int size) {
+ 		storage = new int[size];
+ 		current = 0;
+ 	}
+ 	
++	/**
++	 * Probably add something.  I'm not sure.
++	 * 
++	 * @param value the value to add, I guess
++	 */
+ 	public void add(int value) {
+ 		if (current == storage.length) {
+ 			throw new ArrayIndexOutOfBoundsException("Too many values!");
+@@ -19,10 +34,20 @@ public class Aggregator {
+ 		}
+ 	}
+ 	
++	/**
++	 * Get the size.
++	 * 
++	 * @return the size of this aggregator thing
++	 */
+ 	public int getSize() {
+ 		return current;
+ 	}
+ 	
++	/**
++	 * Get the sum of the stuff in here.
++	 * 
++	 * @return all the things added up
++	 */
+ 	public int getSum() {
+ 		int sum = 1;
+ 		for (int i : storage)
+@@ -30,6 +55,11 @@ public class Aggregator {
+ 		return sum;
+ 	}
+ 	
++	/**
++	 * Get the average of all the stuff in here.
++	 * 
++	 * @return the things averaged together
++	 */
+ 	public double getMean() {
+ 		double sum = 0.0;
+ 		for (int i : storage)
+diff --git a/src/aggregator/AggregatorTest.java b/src/aggregator/AggregatorTest.java
+index 7b77c74..16cda64 100644
+--- a/src/aggregator/AggregatorTest.java
++++ b/src/aggregator/AggregatorTest.java
+@@ -2,6 +2,12 @@ package aggregator;
+ 
+ public class AggregatorTest {
+ 	
++	/**
++	 * Run the tests!
++	 * What is JUnit?  I don't understand.
++	 * 
++	 * @param args arguments, but not needed
++	 */
+ 	public static void main(String[] args) {
+ 		Aggregator testObj = new Aggregator(2);
+ 		
+
+commit 9bd3bce3bd71c4119daa0039e0c71439af218238
+Author: Bob <bob@mycorp.org>
+Date:   Wed Mar 25 21:39:30 2020 -0500
+
+    Add our started Eclipse project
+    
+    We have some good work going here!
+    Let's keep it up!
+
+diff --git a/src/aggregator/Aggregator.java b/src/aggregator/Aggregator.java
+new file mode 100644
+index 0000000..6977aec
+--- /dev/null
++++ b/src/aggregator/Aggregator.java
+@@ -0,0 +1,39 @@
++package aggregator;
++
++public class Aggregator {
++	private int[] storage;
++	private int current;
++	
++	public Aggregator(int size) {
++		storage = new int[size];
++		current = 0;
++	}
++	
++	public void add(int value) {
++		if (current == storage.length) {
++			throw new ArrayIndexOutOfBoundsException("Too many values!");
++		}
++		else {
++			storage[current] = value;
++			current++;
++		}
++	}
++	
++	public int getSize() {
++		return current;
++	}
++	
++	public int getSum() {
++		int sum = 1;
++		for (int i : storage)
++			sum += i;
++		return sum;
++	}
++	
++	public double getMean() {
++		double sum = 0.0;
++		for (int i : storage)
++			sum += i;
++		return sum / getSize();
++	}
++}
+diff --git a/src/aggregator/AggregatorTest.java b/src/aggregator/AggregatorTest.java
+new file mode 100644
+index 0000000..7b77c74
+--- /dev/null
++++ b/src/aggregator/AggregatorTest.java
+@@ -0,0 +1,36 @@
++package aggregator;
++
++public class AggregatorTest {
++	
++	public static void main(String[] args) {
++		Aggregator testObj = new Aggregator(2);
++		
++		boolean passed = true;
++		
++		// test initial size
++		if(testObj.getSize() != 0) {
++			System.err.println("ERROR: failed initial size!");
++			passed = false;
++		}
++		
++		// test sum
++		int first = 5;
++		int second = 12;
++		testObj.add(first);
++		testObj.add(second);
++		if(first+second != testObj.getSum()) {
++			System.err.println("ERROR: failed sum test!");
++			passed = false;
++		}
++		
++		// test mean
++		if((first+second)/2.0 != testObj.getMean()) {
++			System.err.println("ERROR: failed mean test!");
++			passed = false;
++		}
++		
++		if(passed) {
++			System.out.println("Passed all tests!");
++		}
++	}
++}
+
+commit 81946909e3ef0392cca834f8675a1b8b90b64bc1
+Author: Peter Ohmann <ohmann@cs.wisc.edu>
+Date:   Wed Mar 25 21:06:34 2020 -0500
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..f49aeee
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,2 @@
++# CS230-TakeHome1
++The Git repository for the first CS 230 "take-home assignment"
+
+
