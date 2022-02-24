@@ -1,0 +1,124 @@
+import zhstructures.*;
+import org.junit.*;
+import java.util.*;
+import <foo>structures.*;
+/**
+ * A JUnit test case class for class <FOO>TreeMap  
+ * 
+ * @author Imad M Rahal
+ * @version March 20, 2015
+ */
+public class TreeMapTest {
+  
+  private ZHMap<String,Integer> notEmptyMap, emptyMap;
+  
+  @Before  
+  public void init(){
+    notEmptyMap = new <FOO>TreeMap<String,Integer>();
+    notEmptyMap.put("a",10);  
+    notEmptyMap.put("b",20);
+    notEmptyMap.put("c",30);
+    notEmptyMap.put("d",40);  
+    emptyMap = new <FOO>TreeMap<String,Integer>();
+  }
+  
+  @Test  
+  public void testPutToAddANewPairInAnEmptyMap(){    
+    Assert.assertNull("emptyMaptyMap adds an (e,50) entry ",emptyMap.put("e",50));
+  }
+  
+  @Test  
+  public void testPutToAddANewPairInANotEmptyMap(){    
+    Assert.assertNull("notEmptyMap adds an (e,50) entry ",notEmptyMap.put("e",50));
+  }
+  
+  @Test  
+  public void testPutToUpdateAnExistingPair(){
+    Assert.assertTrue("notEmptyMap has the value 20 for key b ", notEmptyMap.get("b")==20);
+    Assert.assertTrue("notEmptyMap replaces (b,20) with (b,200) ", notEmptyMap.put("b",200)==20);
+    Assert.assertTrue("notEmptyMap has the value 200 for key b ", notEmptyMap.get("b")==200);    
+  }
+  
+  @Test  
+  public void testContainsReturnsTrue(){
+    Assert.assertTrue("notEmptyMap contains entry (a,10) ", notEmptyMap.contains("a"));
+    Assert.assertTrue("notEmptyMap contains entry (b,20) ", notEmptyMap.contains("b"));
+    Assert.assertTrue("notEmptyMap contains entry (c,30) ", notEmptyMap.contains("c"));
+    Assert.assertTrue("notEmptyMap contains entry (d,40) ", notEmptyMap.contains("d"));    
+  }
+  
+  @Test  
+  public void testContainsReturnsFalse(){  
+    Assert.assertFalse("notEmptyMap does not contain entry (e,50) ", notEmptyMap.contains("e"));     
+    Assert.assertFalse("emptyMap does not contain entry (e,50) ", emptyMap.contains("e"));     
+  }
+  
+  @Test   
+  public void testGet(){
+    Assert.assertTrue("notEmptyMap contains entry (a,10) ", notEmptyMap.get("a")==10);
+    Assert.assertTrue("notEmptyMap contains entry (b,20) ", notEmptyMap.get("b")==20);
+    Assert.assertTrue("notEmptyMap contains entry (c,30) ", notEmptyMap.get("c")==30);
+    Assert.assertTrue("notEmptyMap contains entry (d,40) ", notEmptyMap.get("d")==40);
+  }
+  
+  @Test   
+  public void testGetReturnsNull(){
+    Assert.assertNull("notEmptyMap does not contain entry (e,50) ", notEmptyMap.get("e")); 
+    Assert.assertNull("emptyMap does not contain entry (e,50) ", emptyMap.get("e"));
+  }
+  
+  @Test   
+  public void testIsEmptyReturnsTrue(){
+    
+    Assert.assertTrue("emptyMaptyMap is empty ",emptyMap.isEmpty());
+  }
+  
+  @Test   
+  public void testIsEmptyReturnsFalse(){
+    Assert.assertFalse("notEmptyMap is not empty ",notEmptyMap.isEmpty());
+  }  
+  
+  @Test  
+  public void testIterator(){
+    int i = 0;
+    for (String key: notEmptyMap) {
+      Assert.assertTrue("notEmptyMap contains key " + key, notEmptyMap.contains(key));
+      if (key.equals("a"))
+        Assert.assertTrue("key=" + key + " ==> value=" + notEmptyMap.get(key), notEmptyMap.get(key)==10);
+      else if (key.equals("b")) 
+        Assert.assertTrue("key=" + key + " ==> value=" + notEmptyMap.get(key), notEmptyMap.get(key)==20);
+      else if (key.equals("c")) 
+        Assert.assertTrue("key=" + key + " ==> value=" + notEmptyMap.get(key), notEmptyMap.get(key)==30);
+      else if (key.equals("d")) 
+        Assert.assertTrue("key=" + key + " ==> value=" + notEmptyMap.get(key), notEmptyMap.get(key)==40);      
+      i++;
+    }
+    Assert.assertTrue("notEmptyMap contains the same number of elements in iterator ",notEmptyMap.size()==i);
+  }
+  
+  @Test  
+  public void testRemove(){
+    Assert.assertTrue("notEmptyMap contains entry (a,10) ",notEmptyMap.remove("a")==10);
+  }
+  
+  @Test  
+  public void testRemoveReturnsNull(){
+    Assert.assertNull("emptyMap does NOT contains entr (a,10) ", emptyMap.remove("a"));
+  }  
+  
+  @Test  
+  public void testRemoveReturnsToEmpty(){
+    Assert.assertTrue("notEmptyMap contains entry (a,10) ",notEmptyMap.remove("a")==10);
+    Assert.assertTrue("notEmptyMap contains entry (b,20) ", notEmptyMap.remove("b")==20);
+    Assert.assertTrue("notEmptyMap contains entry (c,30) ",notEmptyMap.remove("c")==30);
+    Assert.assertTrue("notEmptyMap contains entry (d,40) ",notEmptyMap.remove("d")==40);
+    Assert.assertTrue("notEmptyMap is empty ",notEmptyMap.isEmpty());
+  }
+  @Test  
+  public void testSize(){
+    Assert.assertTrue("notEmptyMap contains 4 elements ",notEmptyMap.size()==4);
+    Assert.assertTrue("emptyMap contains 0 elements ",emptyMap.size()==0);  
+    
+  }
+  
+}
