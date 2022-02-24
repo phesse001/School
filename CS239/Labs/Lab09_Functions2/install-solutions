@@ -1,0 +1,33 @@
+#!/bin/sh
+echo 'name: solution
+version: 0.1.0
+id: solution-0.1.0-8a556eb9ee0973a3e942bcea5da35814
+
+license: AllRightsReserved
+copyright:
+maintainer:
+stability:
+homepage:
+package-url:
+synopsis:
+description:
+category:
+author: Jeremy Iverson
+exposed: True
+exposed-modules: Solutions
+hidden-modules:
+trusted: False
+import-dirs: '`pwd`'/solution/lib/solution-0.1.0/ghc-7.6.3
+library-dirs: '`pwd`'/solution/lib/solution-0.1.0/ghc-7.6.3
+hs-libraries: HSsolution-0.1.0
+extra-libraries:
+extra-ghci-libraries:
+include-dirs:
+includes:
+depends: base-4.6.0.1-8aa5d403c45ea59dcd2c39f123e27d57
+hugs-options:
+cc-options:
+ld-options:
+framework-dirs:
+frameworks:
+' | '/usr/bin/ghc-pkg' 'update' '-' '--global' '--user' "$@"

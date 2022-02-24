@@ -1,0 +1,22 @@
+*Main> poly1 0.32
+-0.6928000000000001
+*Main> poly1 0.29
+2.300000000000857e-3
+
+*Main> poly2 1.5
+-1.984375
+*Main> poly2 1.75
+0.0
+
+*Main> triangle 1 1 1
+"equalateral"
+*Main> triangle 1 1 2
+"isoceles"
+*Main> triangle 1 2 3
+"scalene"
+*Main> triangle 2 1 1
+"isoceles"
+*Main> triangle 1 2 1
+"isoceles"
+
+
