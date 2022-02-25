@@ -1,0 +1,34 @@
+import java_cup.runtime.*;
+
+/* Terminals (tokens returned by the scanner). */
+/* This is what generates sym.java! */
+terminal PLUS, ID;
+
+/* Non terminals */
+non terminal stmt_list, stmt, expr;
+
+/* Precedences */
+precedence left PLUS;
+
+/* The grammar rules */
+stmt_list ::= stmt:s
+    {:
+        System.err.println("Stmt list parsed!");
+    :}
+            | /* epsilon */
+    {:
+        System.err.println("Empty stmt list parsed!");
+    :}
+;
+
+stmt      ::= expr:e SEMICOLON
+    {:
+        System.err.println("Stmt parsed as exp!");
+    :}
+;
+
+expr      ::= ID:i
+    {:
+        System.err.println("Expr parsed as ID: " + i);
+    :}
+;
