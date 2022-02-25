@@ -1,4 +1,0 @@
-text data << args[0];
-list<text> lines = data / "\n";
-list<text> matches = lines[? args[1] ?];
-print matches;
