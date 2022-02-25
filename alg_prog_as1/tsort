@@ -1,0 +1,101 @@
+#!/bin/python3
+
+import numpy as np
+import sys
+import time
+# read in graph into adjacency matrix
+def create_matrix(path):
+	# open file
+	with open(path) as file:
+		for line in file:
+			pass
+		# sorted by first, then second column, so n should be the greater of the last two
+		n = int(max(line.split(' ')))
+		file.close
+		adj_matrix = np.zeros((n,n))
+
+	with open(path) as file:	
+		# put in vertices
+		for line in file:
+			row = int(line.split(' ')[0])
+			col = int(line.split(' ')[1])
+			adj_matrix[row-1][col-1] = 1.0
+
+	return adj_matrix
+
+
+def find_start(matrix):
+	start = None
+	found = False
+	# start with first element in matrix with vertex
+	nrows = matrix.shape[0]
+	ncols = matrix.shape[1]
+	for i in range(nrows):
+		for j in range(ncols):
+			# visit vertex
+			if matrix[i][j] == 1.0:
+				start = i
+				found = True
+				break
+		if found:
+			break
+
+	# if start == None then there is no vertex in the matrix
+	if start == None:
+		return -1
+	else:
+		return start
+
+def dfs(matrix, adj, stack, visited):
+	row = matrix[adj]
+	for i in range(len(row)):
+		if matrix[adj][i] == 1.0 and i not in visited:
+				visited.append(i)
+				stack.append(i)
+				dfs(matrix, i, stack, visited)
+
+	# if nothing is found, start popping off stack and looking at previous nodes
+	if len(stack) > 1:
+
+		stack.pop()
+		dfs(matrix, stack[-1], stack, visited)
+
+	else:
+		# if the stack is empty then check to see if there any disconnected nodes
+		n = matrix.shape[0]
+		for i in range(n):
+			for j in range(n):
+				if matrix[i][j] == 1.0 and i not in visited:
+					visited.append(i)
+					stack.append(i)
+					dfs(matrix, j, stack, visited)
+
+	return visited
+
+def print_results(L,time):
+	for item in L:
+		print(item)
+	print("%.4f" % elapsed)
+
+if __name__ == '__main__':
+	path = sys.argv[1]
+
+	begin = time.time()
+	adj_matrix = create_matrix(path)
+	start = find_start(adj_matrix)
+
+	stack = []
+	visited = []
+
+	stack.append(start)
+	visited.append(start)
+
+	top = dfs(adj_matrix,start,stack,visited)
+	final = []
+	n = len(top) -1
+	while n >= 0:
+		final.append(top[n] + 1)
+		n -= 1
+	end = time.time()
+	elapsed = end - begin
+	print_results(final, elapsed)
