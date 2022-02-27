@@ -1,3 +1,0 @@
-text data << args[0];
-list<text> lines = data / "\n";
-print length(lines);
