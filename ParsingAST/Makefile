@@ -9,13 +9,13 @@
 #   make clean        => cleans up for a re-build
 ##
 
-CLASSPATH = ".:./ast:/usr/people/classes/CS340/software/*"
+CLASSPATH = ".:./ast:/home/patrick/School/software/*"
 
 JAVAC = javac
 JFLAGS = -g -Werror -source 1.8 -cp $(CLASSPATH)
 
-JFLEXLOC = /usr/people/classes/CS340/software
-JCUPLOC = /usr/people/classes/CS340/software
+JFLEXLOC = ./software
+JCUPLOC = ./software
 
 all: ParserTest.class
 

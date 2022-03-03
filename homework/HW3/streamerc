@@ -1,3 +1,3 @@
 #!/bin/sh
 
-java -cp ".:./ast:/usr/people/classes/CS340/software/*" StreamerC $1
+java -cp ".:./ast:/home/patrick/School/software/*" StreamerC $1

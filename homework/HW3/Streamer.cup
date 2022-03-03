@@ -38,10 +38,13 @@ non terminal StatementListNode stmt_list;
 non terminal StatementNode stmt;
 non terminal ExpressionNode expr;
 non terminal TypeNode type;
+non terminal ExpressionListNode expr_list;
+non terminal ExpressionListNode endlist;
 
 /* Precedences */
 precedence right ASSIGN;
 precedence left PLUS, MINUS;
+precedence right AND, OR;
 
 /* The grammar rules */
 program ::= func_list:f stmt_list:s
@@ -120,8 +123,59 @@ expr      ::= ID:i ASSIGN expr:e
         System.err.println("Expression parsed as NUM!");
         RESULT = new NumExpressionNode(n);
     :}
+            | QSTRING:s
+    {:
+        System.err.println("Expression parsed as QSTRING!");
+        RESULT = new QStringExpressionNode(s);
+    :}
+            | TRUE
+    {:
+        System.err.println("Expression parsed as TRUE!");
+        RESULT = new BoolNode("true");
+    :}
+            | FALSE
+    {:
+        System.err.println("Expression parsed as FALSE!");
+        RESULT = new BoolNode("false");
+    :}
+            | NOT expr:e
+    {:
+        System.err.println("Expression parsed as NOT!");
+        RESULT = new NotExpressionNode(e);
+    :}
+            | expr:b1 AND expr:b2
+    {:
+        System.err.println("Expression parsed as AND!");
+        RESULT = new BooleanOpExpressionNode(b1, b2, "&&");
+    :}
+            | expr:b1 OR expr:b2
+    {:
+        System.err.println("Expression parsed as OR!");
+        RESULT = new BooleanOpExpressionNode(b1, b2, "||");
+    :}
+            | OPENCURLY expr_list CLOSECURLY 
+    {:
+        System.err.println("Expression parsed as LIST!");
+    :}
 ;
-
+expr_list ::= expr:e COMMA expr_list:l
+{:
+        System.err.println("Expression parsed!");
+        l.addExpression(e, 0);
+        RESULT = l;
+    :}
+           | expr:e endlist:l 
+    {:
+        System.err.println("Expression list parsed!");
+        l.addExpression(e);
+        RESULT = l;
+    :}
+;
+endlist   ::= //
+    {:
+        RESULT = new ExpressionListNode();
+    :}
+;
 type      ::= NUMTYPE
     {:
         System.err.println("Type parsed as NUM!");

@@ -7,10 +7,10 @@
 #   make clean       => cleans up for a re-build
 ##
 
-CLASSPATH = ".:/usr/people/classes/CS340/software/*"
+CLASSPATH = ".:/home/patrick/School/software/*"
 
 JAVAC = javac
-JFLAGS = -g -Werror -source 1.8 -cp $(CLASSPATH)
+JFLAGS = -g -Werror -cp $(CLASSPATH)
 
 SOURCES = ASTNode.java
 

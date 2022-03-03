@@ -9,12 +9,10 @@
 #   make clean       => cleans up for a re-build
 ##
 
-CLASSPATH = ".:/usr/people/classes/CS340/software/*"
-
 JAVAC = javac
-JFLAGS = -g -Werror -source 1.8 -cp $(CLASSPATH)
-
-JFLEXLOC = /usr/people/classes/CS340/software
+CLASSPATH = ".:/home/patrick/School/software/*"
+JFLAGS = -g -Werror -cp $(CLASSPATH)
+JFLEXLOC = /home/patrick/School/software
 
 all: ScannerTest.class
 

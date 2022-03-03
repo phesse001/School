@@ -4,7 +4,7 @@
  *
  * @author Peter Ohmann + <Patrick Hesse here>
  */
-public class BinaryOpExpressionNode extends ExpressionNode {
+public class BooleanOpExpressionNode extends ExpressionNode {
     private ExpressionNode left;
     private ExpressionNode right;
     private String operator;
@@ -12,7 +12,7 @@ public class BinaryOpExpressionNode extends ExpressionNode {
     /**
      * Represent an infix binary operator; that is "left op right".
      */
-    public BinaryOpExpressionNode(ExpressionNode left,
+    public BooleanOpExpressionNode(ExpressionNode left,
                                   ExpressionNode right, String op) {
         super();
         this.left = left;
@@ -24,6 +24,6 @@ public class BinaryOpExpressionNode extends ExpressionNode {
 
     @Override
     public String toString() {
-        return "Binary operator '" + this.operator + "'";
+        return "Boolean operator '" + this.operator + "'";
     }
 }
