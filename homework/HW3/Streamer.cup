@@ -40,6 +40,7 @@ non terminal ExpressionNode expr;
 non terminal TypeNode type;
 non terminal ExpressionListNode expr_list;
 non terminal ExpressionListNode endlist;
+non terminal ErrorNode error_stmt;
 
 /* Precedences */
 precedence right ASSIGN;
@@ -85,6 +86,11 @@ stmt      ::= expr:e SEMICOLON
         System.err.println("Statement parsed as print!");
         RESULT = new PrintStatementNode(e);
     :}
+            | EXIT expr:e SEMICOLON
+    {:
+        System.err.println("Statement parsed as exit!");
+        RESULT = new ExitStatementNode(e);
+    :}
             | type:t ID:i ASSIGN expr:e SEMICOLON
     {:
         System.err.println("Statement parsed as a declaration assignment!");
@@ -96,8 +102,19 @@ stmt      ::= expr:e SEMICOLON
         System.err.println("Statement parsed as a declaration!");
         RESULT = new DeclarationStatementNode(t, i);
     :}
-;
+            | type:t ID:i READFILE expr:e SEMICOLON
+    {:
+        System.err.println("Statement parsed as a reading from a file!");
+        AssignFileNode file = new AssignFileNode(i, e);
+        RESULT = new DeclarationStatementNode(t, i, file);
+    :}
+            | ERROR OPENCURLY stmt_list:s CLOSECURLY
+    {:
+        System.err.println("Error statement list parsed!");
+        RESULT = new ErrorStatementNode(s);
+    :}
 
+;
 expr      ::= ID:i ASSIGN expr:e
     {:
         System.err.println("Expression parsed as assignment!");

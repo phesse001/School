@@ -28,6 +28,13 @@ public class DeclarationStatementNode extends StatementNode {
         this.children.add(assignment);
     }
 
+    public DeclarationStatementNode(TypeNode type, String varName,
+                                    AssignFileNode assignment) {
+        this(type, varName);
+        this.children.add(assignment);
+    }
+
+
     @Override
     public String toString() {
         return "Declaration statement: " + this.varName;
