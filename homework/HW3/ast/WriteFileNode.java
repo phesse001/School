@@ -5,17 +5,20 @@ import java_cup.runtime.*;
  *
  * @author Peter Ohmann + <Patrick Hesse>
  */
-public class AssignFileNode extends ExpressionNode {
-    private String id;
+public class WriteFileNode extends StatementNode {
+    private ExpressionNode id;
+    private ExpressionNode fn;
 
-    public AssignFileNode(String id, ExpressionNode fn) {
+    public WriteFileNode(ExpressionNode id, ExpressionNode fn) {
         super();
         this.id = id;
+        this.fn = fn;
+        this.children.add(id);
         this.children.add(fn);
     }
 
     @Override
     public String toString() {
-        return "File read into variable: " + this.id;
+        return "File write statement";
     }
 }

@@ -3,24 +3,24 @@
  *
  * @author Peter Ohmann + <your name here>
  */
-public class StatementListNode extends ASTNode {
+public class ParamListNode extends ASTNode {
     /**
      * An empty statement list.
      */
-    public StatementListNode() {
+    public ParamListNode() {
         super();
     }
 
-    public void addStatement(StatementNode s, int position) {
+    public void addParam(ParameterStatementNode s, int position) {
         this.children.add(position, s);
     }
 
-    public void addStatement(StatementNode s) {
+    public void addParam(ParameterStatementNode s) {
         this.children.add(s);
     }
 
     @Override
     public String toString() {
-        return "Statement List";
+        return "Parameter List";
     }
 }

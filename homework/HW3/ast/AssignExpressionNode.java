@@ -14,6 +14,13 @@ public class AssignExpressionNode extends ExpressionNode {
         this.children.add(e);
     }
 
+     public AssignExpressionNode(String id, ExpressionListNode l) {
+        super();
+        this.id = id;
+        this.children.add(l);
+    }
+   
+
     @Override
     public String toString() {
         return "Assignment to variable: " + this.id;
