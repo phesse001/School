@@ -10,6 +10,7 @@ public class FunctionDeclarationNode extends StatementNode {
                                   ParamListNode params, StatementListNode list) {
         super();
         this.fname = fname; 
+	this.children.add(type);
         this.children.add(params);
         this.children.add(list);
     }

@@ -18,6 +18,6 @@ public class NotExpressionNode extends ExpressionNode {
 
     @Override
     public String toString() {
-        return "Not Expression";
+        return "Not expression";
     }
 }

@@ -16,6 +16,6 @@ public class ReadFileNode extends ExpressionNode {
 
     @Override
     public String toString() {
-        return "File read into variable: " + this.id;
+        return "File Read into variable: " + this.id;
     }
 }

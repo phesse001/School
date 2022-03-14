@@ -7,7 +7,7 @@
 #   make clean       => cleans up for a re-build
 ##
 
-CLASSPATH = ".:/home/patrick/School/software/*"
+CLASSPATH = ".:/usr/people/classes/CS340/software/*"
 
 JAVAC = javac
 JFLAGS = -g -Werror -cp $(CLASSPATH)

@@ -9,13 +9,13 @@
 #   make clean        => cleans up for a re-build
 ##
 
-CLASSPATH = ".:./ast:/home/patrick/School/software/*"
+CLASSPATH = ".:./ast:/usr/people/classes/CS340/software/*"
 
 JAVAC = javac
 JFLAGS = -g -Werror -cp $(CLASSPATH)
 
-JFLEXLOC = /home/patrick/School/software
-JCUPLOC = /home/patrick/School/software
+JFLEXLOC = /usr/people/classes/CS340/software
+JCUPLOC = /usr/people/classes/CS340/software
 
 all: StreamerC.class
 

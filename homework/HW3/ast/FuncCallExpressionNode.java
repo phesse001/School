@@ -17,6 +17,6 @@ public class FuncCallExpressionNode extends ExpressionNode {
 
     @Override
     public String toString() {
-        return "Function Call: " + this.id;
+        return "Function call: " + this.id;
     }
 }

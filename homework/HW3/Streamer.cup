@@ -162,8 +162,7 @@ stmt      ::= expr:e SEMICOLON
             | UNTIL stmt:s OPENCURLY stmt_list:l CLOSECURLY 
     {:
         System.err.println("Until statement parsed");
-        DeclarationStatementNode dec = new DeclarationStatementNode(s);
-        RESULT = new UntilStatementNode(dec, l);
+        RESULT = new UntilStatementNode(s, l);
     :}
             | RETURN expr:e SEMICOLON 
     {:

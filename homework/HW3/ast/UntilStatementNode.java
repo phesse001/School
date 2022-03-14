@@ -6,13 +6,13 @@
  */
 public class UntilStatementNode extends StatementNode {
     private StatementListNode list;
-    private DeclarationStatementNode dec;
+    private StatementNode s;
 
-    public UntilStatementNode(DeclarationStatementNode dec, StatementListNode list){
+    public UntilStatementNode(StatementNode s, StatementListNode list){
         super();
         this.list = list;
-        this.dec = dec;
-        this.children.add(dec);
+        this.s = s;
+        this.children.add(s);
         this.children.add(list);
     }
 

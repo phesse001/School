@@ -33,10 +33,6 @@ public class DeclarationStatementNode extends StatementNode {
         this(type, varName);
         this.children.add(assignment);
     }
-
-    public DeclarationStatementNode(StatementNode stmt) {
-        this.children.add(stmt);
-    }
     
     @Override
     public String toString() {

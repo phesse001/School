@@ -24,6 +24,6 @@ public class BooleanOpExpressionNode extends ExpressionNode {
 
     @Override
     public String toString() {
-        return "Boolean operator '" + this.operator + "'";
+        return "Binary operator '" + this.operator + "'";
     }
 }

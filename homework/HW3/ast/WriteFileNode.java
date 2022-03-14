@@ -19,6 +19,6 @@ public class WriteFileNode extends StatementNode {
 
     @Override
     public String toString() {
-        return "File write statement";
+        return "File Write Statement";
     }
 }
