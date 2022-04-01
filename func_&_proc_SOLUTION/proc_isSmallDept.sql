@@ -9,7 +9,6 @@ Begin
 	End If;
 End; 
 
-/* can be invoked using the following
 set serveroutput on;
 declare 
   xy Integer;
@@ -17,4 +16,3 @@ begin
   COMPANY_isSmallDept_Proc(1,2,xy);
   DBMS_OUTPUT.PUT_LINE(xy);
 end;
-*/
