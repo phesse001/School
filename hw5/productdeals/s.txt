@@ -1,0 +1,652 @@
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER=12498pdt.TRANS_NUMBER=pdtp.TRANS_NUMBER order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER=12498pdt.TRANS_NUMBER=pdtp.TRANS_NUMBER order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER=pdtp.TRANS_NUMBER order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/hw5, /net/home/phesse001/Desktop/School/in-class, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Static Error: This class does not have a static void main method accepting String[].
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST= ? FIRST= ? STREET= ? CITY= ? STATE=? ZIP_CODE= ? where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Static Error: This class does not have a static void main method accepting String[].
+Select pno,pname, Sum(hours) as hours from monty.company_works_on, monty.company_project where pno=pnumber and dnum=5 Group By pno,pname
+REGULAR STATEMENT USING ATTRIBUTE NAMES
+Project Name:ProductX Total Hours: 52.5
+Project Name:ProductY Total Hours: 37.5
+Project Name:ProductZ Total Hours: 50.0
+***********************************************************************************
+Update monty.company_dept_locations set dlocation = 'Staffford' where dlocation ='Stafford'
+Rows affected 1
+***********************************************************************************
+Update monty.company_dept_locations set dlocation = 'Stafford' where dlocation ='Staffford'
+Rows affected 1
+***********************************************************************************
+ Select pno,pname, Sum(hours) as hours from monty.company_works_on, monty.company_project  where pno=pnumber and dnum=? Group By  pno,pname
+Project Name:ProductX Total Hours: 52.5
+Project Name:ProductY Total Hours: 37.5
+Project Name:ProductZ Total Hours: 50.0
+***********************************************************************************
+select monty.COMPANY_numEmps_Func(?) as Employee_Count from dual
+Number of employees in dept 7 is 10
+***********************************************************************************
+SQL problems:java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (MONTY.SYS_C0014427) violated
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST= ? FIRST= ? STREET= ? CITY= ? STATE=? ZIP_CODE= ? where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST= ? FIRST= ? STREET= ? CITY= ? STATE=? ZIP_CODE= ? where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST= ? FIRST= ? STREET= ? CITY= ? STATE=? ZIP_CODE= ? where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST='?' FIRST='?' STREET='?' CITY='?' STATE='?' ZIP_CODE='?' where CUSTOMER_NUMBER='124'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_TRANS pdt, phesse001.ProductDeals_TRANSPART pdtp where pdt.TRANS_NUMBER='12498' pdt.TRANS_NUMBER='pdtp.TRANS_NUMBER' order by PART_NUMBER
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST='?' FIRST='?' STREET='?' CITY='?' STATE='?' ZIP_CODE='?' where CUSTOMER_NUMBER='124'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY='?' STATE='?' ZIP_CODE='?' where CUSTOMER_NUMBER='124'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+Adams
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+YOUOUOUO
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+YOUOUOUO
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+YOUOUOUO
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+YOUOUOUO
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+YOUOUOUO
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER=124
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER=124
+YOUOUOUO
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Compiler is using classPath = '[/net/home/phesse001/Desktop/School/in-class, /net/home/phesse001/Desktop/School/hw5, /usr/people/classes/Java/objectdraw/objectdraw.jar, /usr/people/classes/Java, /home/phesse001/ ~/JavaPackages, /usr/people/classes/Java/ojdbc7.jar, /opt/drjava-20190813/drjava-beta-20190813-220051.jar]';  bootClassPath = 'null'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Adams
+Select * from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+update phesse001.ProductDeals_CUSTOMER set LAST=? FIRST=? STREET=? CITY=? STATE=? ZIP_CODE=? where CUSTOMER_NUMBER='124'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select * from phesse001.ProductDeals_TRANS where CUSTOMER_NUMBER=124
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=124 and LAST='Adams'
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12498
+Select * from phesse001.ProductDeals_PART pdp, phesse001.ProductDeals_TRANSPART pdtp where pdp.PART_NUMBER=pdtp.PART_NUMBER AND pdtp.TRANS_NUMBER= 12411
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=ooe and LAST='Adams'
+SQL problems:java.sql.SQLSyntaxErrorException: ORA-00904: "OOE": invalid identifier
+
+Select COUNT(*) from phesse001.ProductDeals_CUSTOMER where CUSTOMER_NUMBER=522 and LAST='Nelson'
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual
+select phesse001.ProductDeals_getTransVal(?) as totalValue from dual

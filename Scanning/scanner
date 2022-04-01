@@ -1,3 +1,0 @@
-#!/bin/sh
-
-java -cp ".:/home/patrick/School/software/*" ScannerTest $1

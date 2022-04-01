@@ -1,0 +1,108 @@
+// function
+Create or Replace function COMPANY_isSmallDept_Func(deptNum int, minLimit int) Return INTEGER
+  AS
+    numEmps int :=0;
+    answer int := 0;
+	Begin
+		Select Count(*) into numEmps from Company_Employee where dno = deptNum;
+		If  (numEmps<minLimit) Then
+			answer := 1;
+		End If;
+		Return  answer;
+	End ;
+/* can be invoked using the following:
+select COMPANY_isSmallDept_Func(1,2) from dual;
+*/
+
+// procedure
+// Procedures are used when NO return value is expected (i.e. just doing actions) or when       multiple return values are expected (using OUT parameters)
+Create or Replace procedure COMPANY_isSmallDept_Proc(deptNum int, minLimit int,  answer OUT integer)
+AS
+    	numEmps int :=0;
+Begin
+	answer := 0;
+	Select Count(*) into numEmps from Company_Employee where dno = deptNum;
+	If  (numEmps<minLimit) Then
+            answer := 1;
+	End If;
+End; 
+
+/* can be invoked using the following
+set serveroutput on;
+declare 
+  xy Integer;
+begin
+  COMPANY_isSmallDept_Proc(1,2,xy);
+  DBMS_OUTPUT.PUT_LINE(xy);
+end;
+*/
+
+// SQL examples from quiz
+// 9 rows in DEPARTMENT, 13 in MAJOR and 7 in STUDENT
+SELECT *
+FROM (DEPARTMENT LEFT OUTER JOIN MAJOR ON DName=Major)
+// this query left outer joins on major, so every entry in major will be included, plus the three in department that aren't part of major, resulting in 16 rows
+// JDBC
+“prepared” = already compiled (query string is a parameter)
+Better to use when the same query is to be executed multiple times since it would be 
+compiled (and optimized) only once
+
+executeQuery (SELECT statements)
+Returns a ResultSet
+resultset1 = stmt.executeQuery(queryString); (regular statement)
+resultset2 = preparedStmt.executeQuery(); (prepared statement)
+
+executeUpdate (DDL, INSERT, UPDATE, and DELETE statements)
+Returns how many tuples have been affected (an integer)
+result1 = stmt.executeUpdate(updateString); (regular statement)
+result2 = preparedStmt.executeUpdate(); (prepared statement)
+
+// stmt stuff
+  private Connection myConnection;
+  private Statement stmt;
+  private PreparedStatement preparedStmt;
+  private ResultSet result;
+  
+  public JDBC() throws SQLException, ClassNotFoundException{   
+    Class.forName("oracle.jdbc.OracleDriver");
+    myConnection = DriverManager.getConnection("jdbc:oracle:thin:@//cscioraclerh7srv.ad.csbsju.edu:1521/" + 
+                                               "csci.cscioraclerh7srv.ad.csbsju.edu","jdbc", "jdbc");
+  }
+// update stmt
+  public void RegUpdate(String oldLocation,String newLocation) throws SQLException{
+    String queryString = "Update monty.company_dept_locations set dlocation = '" +newLocation + "' where " + 
+                         "dlocation ='" + oldLocation+ "'";
+    System.out.println(queryString);
+    stmt = myConnection.createStatement();
+    int returns = stmt.executeUpdate(queryString);
+    System.out.println("Rows affected " + returns); System.out.println("***********************************************************************************");
+    stmt.close();
+  }
+// insert prepared stmt
+  public void PreInsert(int dnumber, String location) throws SQLException{
+    String queryString = "INSERT into monty.company_dept_locations values(?,?)";
+ arguement
+    preparedStmt = myConnection.prepareStatement(queryString);
+    preparedStmt.clearParameters();
+    preparedStmt.setInt(1,dnumber);
+    preparedStmt.setString(2,location);
+    int returns = preparedStmt.executeUpdate();
+    System.out.println(queryString);
+    System.out.println("Rows affected " + returns); System.out.println("***********************************************************************************");
+    preparedStmt.close();
+  }
+// prepared stmt query
+  public void PreQuery(int dno) throws SQLException{
+    String queryString  = " Select pno,pname, Sum(hours) as hours from monty.company_works_on, monty.company_project ";
+           queryString += " where pno=pnumber and dnum=? Group By  pno,pname";
+    preparedStmt = myConnection.prepareStatement(queryString);
+    preparedStmt.clearParameters();
+    preparedStmt.setInt(1,dno);
+    result = preparedStmt.executeQuery();
+    System.out.println(queryString);
+    while (result.next())
+      System.out.println("Project Name:"+result.getString(2)+ " Total Hours: " + result.getDouble(3)); System.out.println("***********************************************************************************");
+    result.close();
+    preparedStmt.close();
+  } 
+

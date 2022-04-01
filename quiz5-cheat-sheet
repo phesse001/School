@@ -1,0 +1,98 @@
+Create or Replace function COMPANY_isSmallDept_Func(deptNum int, minLimit int) Return INTEGER
+  AS
+    numEmps int :=0;
+    answer int := 0;
+	Begin
+		Select Count(*) into numEmps from Company_Employee where dno = deptNum;
+		If  (numEmps<minLimit) Then
+			answer := 1;
+		End If;
+		Return  answer;
+	End ;
+can be invoked using the following:
+select COMPANY_isSmallDept_Func(1,2) from dual;
+
+Find the customer number, last name, first name for customers who ordered all parts currently priced below $20 in the database
+
+SELECT CUSTOMER_NUMBER, LAST, FIRST
+FROM ProductDeals_CUSTOMER PDC
+WHERE NOT EXISTS (
+    SELECT * 
+    FROM ProductDeals_PART PDP
+    WHERE UNIT_PRICE < 20 AND NOT EXISTS (
+        SELECT *
+        FROM ProductDeals_TRANSPART PDTP, ProductDeals_TRANS PDT
+        WHERE PDT.CUSTOMER_NUMBER = PDC.CUSTOMER_NUMBER AND PDTP.PART_NUMBER = PDP.PART_NUMBER AND PDTP.TRANS_NUMBER = PDT.TRANS_NUMBER));
+
+SELECT CUSTOMER_NUMBER, LAST, FIRST
+FROM ProductDeals_CUSTOMER PDC
+WHERE NOT EXISTS (
+    SELECT PART_NUMBER
+    FROM ProductDeals_PART
+    WHERE UNIT_PRICE < 20
+    MINUS
+    SELECT PART_NUMBER
+    FROM ProductDeals_TRANSPART PDTP, ProductDeals_TRANS PDT
+    WHERE PDTP.TRANS_NUMBER = PDT.TRANS_NUMBER AND PDT.CUSTOMER_NUMBER = PDC.CUSTOMER_NUMBER);
+
+Find the total quantity sold for each part sold during the month of September of 2002.
+
+SELECT SUM( PDTP.NUMBER_ORDERED ) AS total_ordered, PDTP.PART_NUMBER
+FROM ProductDeals_TRANSPART PDTP, ProductDeals_TRANS PDT
+WHERE trunc(PDT.TRANS_DATE) >= to_date('09/01/2002','MM-DD-YYYY') 
+  AND trunc(PDT.TRANS_DATE) < to_date('10/01/2002','MM-DD-YYYY')AND PDT.TRANS_NUMBER = PDTP.TRANS_NUMBER
+GROUP BY PDTP.PART_NUMBER;
+
+For every part, show the part number and description along with any transaction numbers in which it has been purchased. Order output by PART_NUMBER
+
+SELECT PDP.PART_NUMBER, PDP.PART_DESCRIPTION, PDT.TRANS_NUMBER
+FROM ProductDeals_PART PDP
+LEFT OUTER JOIN PRODUCTDEALS_TRANSPART PDT ON PDP.PART_NUMBER = PDT.PART_NUMBER
+ORDER BY PART_NUMBER;
+
+Specify an SQL update statement to double the UNITS_ON_HAND for any part with a total of more than 10 items ordered in table TRANS_PART
+
+UPDATE ProductDeals_PART PDP
+SET UNITS_ON_HAND = UNITS_ON_HAND * 2
+WHERE (SELECT 
+       SUM(NUMBER_ORDERED)
+       FROM ProductDeals_TRANSPART PDTP
+       WHERE PDTP.PART_NUMBER = PDP.PART_NUMBER) > 10;
+SELECT * FROM ProductDeals_Part;
+
+Specify a WORKS_ON_TOTALS view that shows, for every employee, total hours worked on all projects
+
+CREATE VIEW WORKS_ON_TOTALS AS
+SELECT SSN, FNAME, LNAME, Sum(HOURS) as 
+TotalHours
+FROM  EMPLOYEE,PROJECT,WORKS_ON
+WHERE  SSN=ESSN AND PNO=PNUMBER
+GROUP BY SSN, FNAME, LNAME;
+
+Trigger
+
+CREATE or REPLACE TRIGGER COMPANY_INSERT_DELETE_TRIG
+    AFTER INSERT OR DELETE ON Company_Employee
+    For Each Row
+	Begin 
+        If INSERTING THEN
+            UPDATE  COMPANY_DEPT_INFO 
+            SET     NO_OF_EMPS=NO_OF_EMPS + 1,TOTAL_SAL = TOTAL_SAL+:NEW.salary 
+            where   DEPT_NUM=:NEW.dno;    
+        Else
+            UPDATE  COMPANY_DEPT_INFO 
+            SET     NO_OF_EMPS=NO_OF_EMPS - 1,TOTAL_SAL = TOTAL_SAL-:OLD.salary 
+            where   DEPT_NUM=:OLD.dno;
+        End If;
+    End ;
+
+CREATE TABLE   DEPARTMENT
+ (
+DNAME VARCHAR(20)NOT NULL  UNIQUE,
+DNUMBER INTEGER  PRIMARY KEY  CHECK (DNUMBER >0 AND 
+DNUMBER<21),
+MGRSSN CHAR(9)  NOT NULL  DEFAULT ‘888665555’,
+MGRSTARTDATE DATE ,
+   FOREIGN KEY (MGRSSN) REFERENCES EMPLOYEE(SSN) 
+);
+

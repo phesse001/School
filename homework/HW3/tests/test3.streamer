@@ -1,5 +1,0 @@
-bool val1 = true;
-bool val2 = false;
-bool val3 = false;
-
-bool result = val1 || val2 && !val3;

@@ -1,3 +1,0 @@
-text contents << args[0];
-replaceAll(contents, "teh", "the");
-contents >> args[0];
