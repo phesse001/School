@@ -9,6 +9,8 @@ void unused()
 int readstr(char* buf)
 {
   // as below, plenty big buffer
+  // function will use 20 character array as input, put your input into local var readname,
+  // then copy what you entered into the buffer passed as input.
   char read_name[20];
   gets(read_name);
   strcpy(buf, read_name);
